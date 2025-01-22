@@ -1,0 +1,149 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #000;
+  /* Black background */
+  color: #fff;
+  /* White text */
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #1a1a1a;
+  /* Dark grey container */
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Template Section */
+.template-section {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  background: #2c2c2c;
+  /* Slightly lighter grey */
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.template-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+.template-preview {
+  min-height: 400px;
+  background: #333;
+  /* Dark grey for preview */
+  padding: 15px;
+  border-radius: 10px;
+  overflow: auto;
+  box-shadow: inset 0px 2px 6px rgba(255, 255, 255, 0.1);
+}
+
+/* Input Section */
+.input-section {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  background: #2c2c2c;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.input-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input-group input[type="text"],
+.input-group input[type="color"],
+.input-group textarea,
+.input-group input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #555;
+  background: #000;
+  /* Black inputs */
+  color: #0b926b;
+  outline: none;
+  font-size: 14px;
+}
+
+.input-group textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+/* Buttons */
+button {
+  background: linear-gradient(135deg, #333, #555);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #555, #777);
+  /* Lighter grey on hover */
+  color: #fff;
+}
+
+.style-box-btn {
+  margin: 10px 0;
+}
+
+.style-options {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+}
+
+.style-options-item {
+  text-align: center;
+}
+
+/* Download Button */
+.download-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 15px 30px;
+  background: linear-gradient(135deg, #111, #444);
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+  background: linear-gradient(135deg, #444, #666);
+}
