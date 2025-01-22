@@ -24,7 +24,7 @@ const App = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/getEmailLayout")
+      .get("https://email-builder-backend-6yee.onrender.com/api/getEmailLayout")
       .then((response) => {
         setLayoutHtml(response.data);
       })
@@ -61,13 +61,13 @@ const App = () => {
     formData.append("image", file);
 
     axios
-      .post("http://localhost:5000/api/uploadImage", formData, {
+      .post("https://email-builder-backend-6yee.onrender.com/api/uploadImage", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
       })
       .then((response) => {
-        const uploadedUrl = `http://localhost:5000${response.data.path}`;
+        const uploadedUrl = `https://email-builder-backend-6yee.onrender.com${response.data.path}`;
         setEmailConfig((prev) => ({
           ...prev,
           [type]: uploadedUrl,
